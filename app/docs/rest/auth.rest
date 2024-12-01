@@ -1,0 +1,32 @@
+POST http://127.0.0.1:8000/api/v1/auth/login
+Accept: application/json
+Content-Type: application/json
+
+{
+    "email":"limberg@gmail.com",
+    "password":"usuario123"
+}
+####
+
+POST http://127.0.0.1:8000/api/v1/auth/register
+Accept: application/json
+Content-Type: application/json
+
+{
+    "name":"limberg",
+    "email":"limberg@gmail.com",
+    "password":"usuario123",
+     "c_password":"usuario123"
+}
+
+####
+
+GET  http://127.0.0.1:8000/api/v1/auth/profile
+Accept: application/json
+Authorization: 9|sQYFW7Q8T2073IdXrlXaZUWDkK1g0q23doTz9lGN2d313d6d
+
+#####
+
+POST  http://127.0.0.1:8000/api/v1/auth/logout
+Accept: application/json
+Authorization: 9|sQYFW7Q8T2073IdXrlXaZUWDkK1g0q23doTz9lGN2d313d6d
